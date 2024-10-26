@@ -15,31 +15,23 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Image(
-            fit: BoxFit.cover,
-              height: double.infinity,
-              width: double.infinity,
-              image: AssetImage('assets/splashimg.jpg')),
           Container(
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Colors.black,
-                  Colors.black.withOpacity(0.8),
-                  Colors.black.withOpacity(0.15),
-                  Colors.black.withOpacity(0.5),
-                ],
-                begin: Alignment.bottomCenter,
-                end: Alignment.topCenter
-              )
-            ),
+                gradient: LinearGradient(colors: [
+              Colors.black,
+              Colors.black.withOpacity(0.8),
+              Colors.black.withOpacity(0.15),
+              Colors.black.withOpacity(0.5),
+            ], begin: Alignment.bottomCenter, end: Alignment.topCenter)),
           ),
           Align(
-            alignment: Alignment.center,
+              alignment: Alignment.center,
               child: Image(
-                height: 300,
+                  height: 300,
                   width: 300,
-                  image: AssetImage('assets/Group 3890.png'))),///thankyou
+                  image: AssetImage('assets/Group 3890.png'))),
+
+          ///thankyou
         ],
       ),
     );
