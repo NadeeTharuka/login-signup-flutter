@@ -1,4 +1,4 @@
-package com.example.loginsignup
+package com.example.modernlogintute
 
 import io.flutter.embedding.android.FlutterActivity
 
