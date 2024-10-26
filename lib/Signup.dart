@@ -9,24 +9,14 @@ class Signup extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          const Image(
-              fit: BoxFit.cover,
-              height: double.infinity,
-              width: double.infinity,
-              image: AssetImage('assets/splashimg.jpg')),
           Container(
             decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    colors: [
-                      Colors.black,
-                      Colors.black.withOpacity(0.8),
-                      Colors.black.withOpacity(0.15),
-                      Colors.black.withOpacity(0.5),
-                    ],
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter
-                )
-            ),
+                gradient: LinearGradient(colors: [
+              Colors.black,
+              Colors.black.withOpacity(0.8),
+              Colors.black.withOpacity(0.15),
+              Colors.black.withOpacity(0.5),
+            ], begin: Alignment.bottomCenter, end: Alignment.topCenter)),
           ),
           Align(
             alignment: Alignment.center,
@@ -34,13 +24,17 @@ class Signup extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text('SignUp',style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-
-                ),),
-                SizedBox(height: 30,),
+                Text(
+                  'SignUp',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
                 Padding(
                   padding: EdgeInsets.all(20.0),
                   child: TextField(
@@ -88,45 +82,70 @@ class Signup extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 19,top: 8,right: 19),
+                  padding: EdgeInsets.only(left: 19, top: 8, right: 19),
                   child: Row(
                     children: [
                       AnimatedSwitch(
                         colorOff: Color(0xffA09F99),
                       ),
-                      SizedBox(width: 5,),
-                      Text('Remember me',style: TextStyle(
-                        color: Colors.grey,
-                      ),),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        'Remember me',
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
                       Spacer(),
-                      Text("Forgot Password",style: TextStyle(
-                        color: Colors.grey,
-                      ),),
+                      Text(
+                        "Forgot Password",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
                 Container(
                   height: 50,
                   width: 350,
                   decoration: BoxDecoration(
                     color: Color(0xff0ACF83),
                   ),
-                  child: Center(child: Text('Login',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold
-                    ),),),
+                  child: Center(
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                  ),
                 ),
-                SizedBox(height: 15,),
+                SizedBox(
+                  height: 15,
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 18.0,right: 18),
+                  padding: const EdgeInsets.only(left: 18.0, right: 18),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('-----------',style: TextStyle(color: Colors.white,fontSize: 30),),
-                      Text('Or Login With',style: TextStyle(color: Colors.white,),),
-                      Text('-----------',style: TextStyle(color: Colors.white,fontSize: 30),),
+                      Text(
+                        '-----------',
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      ),
+                      Text(
+                        'Or Login With',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        '-----------',
+                        style: TextStyle(color: Colors.white, fontSize: 30),
+                      ),
                     ],
                   ),
                 ),
@@ -138,44 +157,62 @@ class Signup extends StatelessWidget {
                       width: 100,
                       decoration: BoxDecoration(
                           color: Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
+                          borderRadius: BorderRadius.circular(5)),
+                      child: Icon(
+                        Icons.g_mobiledata,
+                        color: Colors.white,
+                        size: 40,
                       ),
-                      child: Icon(Icons.g_mobiledata,color: Colors.white,size: 40,),
                     ),
                     Container(
                       height: 50,
                       width: 100,
                       decoration: BoxDecoration(
                           color: Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
+                          borderRadius: BorderRadius.circular(5)),
+                      child: Icon(
+                        Icons.apple,
+                        color: Colors.white,
+                        size: 40,
                       ),
-                      child: Icon(Icons.apple,color: Colors.white,size: 40,),
                     ),
                     Container(
                       height: 50,
                       width: 100,
                       decoration: BoxDecoration(
                           color: Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
+                          borderRadius: BorderRadius.circular(5)),
+                      child: Icon(
+                        Icons.facebook,
+                        color: Colors.white,
+                        size: 40,
                       ),
-                      child: Icon(Icons.facebook,color: Colors.white,size: 40,),
                     ),
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 100.0,top: 30),
+                  padding: const EdgeInsets.only(left: 100.0, top: 30),
                   child: Row(
                     children: [
-                      Text("Alredy have an accont?",style: TextStyle(
-                        color: Colors.grey,
-                      ),),
-                      SizedBox(width: 5,),
-                      Text("Login",style: TextStyle(///done thhav
-                        ///chsdcjsb,BSJnkyoyyuusfhsdfhdfgejfw
-                          color: Colors.green,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18
-                      ),),
+                      Text(
+                        "Alredy have an accont?",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        "Login",
+                        style: TextStyle(
+
+                            ///done thhav
+                            ///chsdcjsb,BSJnkyoyyuusfhsdfhdfgejfw
+                            color: Colors.green,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18),
+                      ),
                     ],
                   ),
                 ),
